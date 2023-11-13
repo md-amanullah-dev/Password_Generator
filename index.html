@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Password Genetaror</title>
+</head>
+
+<body class="bg-[#1e1b4b]  flex justify-center items-center mt-32">
+
+
+    <div class="border w-96 h-100  rounded-md shadow-md ">
+        <h1 class="font-bold ml-24 mt-2 text-[25px] text-white">Password Generator</h1><br>
+
+        <form action="">
+
+            <div>
+                <input id="passwordDisplay" type="text" placeholder="click on generate button"
+                    class="w-[350px] h-[30px] text-black m-[20px] font-bold pl-4 rounded">
+                <button type="button" id="generateButton"
+                    class="h-[30px] w-[100px] bg-[#2563eb] rounded-[5px] font-semibold text-white ml-[20px]">Genetare</button>
+                <button type="button" id="copyButton"
+                    class="h-[30px] w-[200px] bg-[#2563eb] rounded-[5px] font-semibold text-white">Copy to clip
+                    Board</button>
+            </div>
+
+
+            <div class="mt-6 ml-4">
+                <label for="lenght" class="font-semibold text-white ">Password Lenght:</label>
+                <input type="number" id="passwordLenght"
+                    class="ml-7 mb-4 bg-[#1e1b4b] border font-semibold text-white rounded">
+
+                <label for="Uppercase" class="font-semibold text-white 
+                  ">Include Uppercase Latters:</label>
+                <input type="checkbox" id="uppercaseCheckbox" class="ml-[129px] mb-4 mb-4 w-6 h-6">
+
+
+
+                <label for="Lowercase" class="font-semibold text-white">Include Lowercase Latters:</label>
+                <input type="checkbox" id="lowercaseCheckbox " class="ml-[130px] mb-4 mb-4 w-6 h-6">
+
+
+                <label for="Number" class="font-semibold text-white">Include Number:</label>
+                <input type="checkbox" id="numberCheckbox" class="ml-[200px] mb-4 mb-4 w-6 h-6">
+
+
+                <label for="Symbols" class="font-semibold text-white">Include Symbols</label>
+                <input type="checkbox" id="symbolsCheckbox " class="ml-[202px] mb-4 w-6 h-6">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
